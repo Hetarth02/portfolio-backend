@@ -34,9 +34,9 @@ app.post("/send-mail", (req, res) => {
 
     transporter.sendMail(mail_data, (error, info) => {
         if (error) {
-            res.status(404).send({ message: "Something went wrong, Please try again!" });
+            res.send({ message: "Something went wrong, Please try again!" });
         }
-        res.status(200).send({ message: "Email sent successfully!" });
+        res.send({ message: "Email sent successfully!" });
     });
 });
 
