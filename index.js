@@ -39,3 +39,5 @@ app.post("/send-mail", (req, res) => {
         res.status(200).send({ message: "Email sent successfully!" });
     });
 });
+
+app.listen(process.env.PORT || 3000, () => console.log("Status: Server Active..."));
