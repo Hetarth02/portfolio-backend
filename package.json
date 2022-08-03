@@ -1,0 +1,15 @@
+{
+    "name": "portfolio_backend",
+    "version": "1.0.0",
+    "description": "Portfolio Backend",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "Hetarth Shah",
+    "dependencies": {
+        "dotenv": "^16.0.1",
+        "express": "^4.18.1",
+        "nodemailer": "^6.7.7"
+    }
+}
