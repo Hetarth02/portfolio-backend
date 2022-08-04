@@ -9,13 +9,11 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
 const transporter = nodemailer.createTransport({
-    port: 465,
-    service: "smtp.gmail.com",
+    service: "Gmail",
     auth: {
         user: process.env.GMAIL_USER,
         pass: process.env.GMAIL_PASSWORD,
     },
-    secure: true,
 });
 
 app.post("/send-mail", (req, res) => {
