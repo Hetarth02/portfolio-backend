@@ -20,6 +20,7 @@ const transporter = nodemailer.createTransport({
 
 app.post("/send-mail", (req, res) => {
     let send_data = req.body;
+    console.log(send_data);
     const email_data = `${send_data.first_name} ${send_data.last_name} sent you an inquiry having the contents as follows,
 
 ${send_data.message}
