@@ -1,10 +1,12 @@
 const express = require("express");
 const dotenv = require("dotenv");
+const cors = require("cors");
 const nodemailer = require("nodemailer");
 const app = express();
 
 dotenv.config({ path: "./.env" });
 
+app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
